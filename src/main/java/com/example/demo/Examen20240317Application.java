@@ -14,15 +14,6 @@ public class Examen20240317Application {
 
 		Producto producto = new Producto();
 
-		producto.setNombre("harina");
-		producto.setTipo("harinas");
-		producto.setValorCompra(3);
-		producto.setValorVenta(4);
-		producto.setCantidadProducto(15);
-
-		Factura factura = new Factura();
-		
-		factura.getFactura(producto.getNombre(), 2, producto.getValorVenta());
 		
 	}
 
