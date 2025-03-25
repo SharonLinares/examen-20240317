@@ -2,10 +2,10 @@ package dto;
 
 public class Persona {
 
-	private String nombre;
 	private String apellido;
-	private int direccion;
-	private int celular;
+	private String direccion;
+	private String celular;
+	private String nombre;
 
 	public String getNombre() {
 		return nombre;
@@ -23,19 +23,19 @@ public class Persona {
 		this.apellido = apellido;
 	}
 
-	public int getDireccion() {
+	public String getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(int direccion) {
+	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
 
-	public int getCelular() {
+	public String getCelular() {
 		return celular;
 	}
 
-	public void setCelular(int celular) {
+	public void setCelular(String celular) {
 		this.celular = celular;
 	}
 
