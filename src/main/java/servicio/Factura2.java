@@ -25,29 +25,28 @@ public class Factura2 {
 		System.out.println("valor producto: " + producto.getValorVenta());
 
 		switch (persona.getNombre()) {
-		case "Checho": {
+		case "Checho":
 			valorDescuento = subTotal * descuentoChecho;
 			totalPago = subTotal - valorDescuento;
 			System.out.println(persona.getNombre() + " tu pago es de: " + totalPago);
 
 			break;
-		}
 
-		case "Sharon": {
+		case "Sharon":
 			valorDescuento = subTotal * descuentoSharon;
 			totalPago = subTotal - valorDescuento;
 			System.out.println(persona.getNombre() + " tu pago es de: " + totalPago);
 			break;
-		}
-		case "Diego": {
+
+		case "Diego":
 			valorDescuento = subTotal * descuentoDiego;
 			totalPago = subTotal - valorDescuento;
 			System.out.println(persona.getNombre() + " tu pago es de: " + totalPago);
 			break;
-		}
+
 		default:
-			valorDescuento = 0.0;
-			totalPago = subTotal;
+
+			System.out.println(persona.getNombre() + " tu pago es de: " + subTotal);
 		}
 
 	}
@@ -55,11 +54,18 @@ public class Factura2 {
 	public static void main(String[] args) {
 
 		Factura2 factura2 = new Factura2();
-
-		factura2.getFactura2("checho", 22);
+		Persona persona = new Persona();
+		Producto producto = new Producto();
 		
+		
+		persona.setNombre("Checho");
+		producto.setNombre("harina pan");
+	    producto.setCantidadProducto(3); 
+		producto.setValorVenta(3);
+		
+		
+		
+		factura2.getFactura2(persona, producto); 
+
 	}
 }
-
-
-
